@@ -42,3 +42,82 @@
     flex-direction: column;
   }
   
+  button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  button:hover {
+    opacity: 0.5;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  button:active {
+    outline: none;
+    border: none;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+
+  .logo {
+    margin-left: 40px;
+    width: 180px;
+    height: 120px;
+  }
+  
+  .description {
+    margin: 0 40px;
+  }
+  
+  .description_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .personal_key {
+    height: 110px;
+    margin: 0 40px;
+    background: rgba(196, 196, 196, 0.2);
+    background-filter: blur(80px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .personal_key_title {
+    padding: 0 25px;
+  }
+  
+  .personal_key_title_paragraph {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .personal_key_value {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    align-items: center;
+  }
+  
+  .personal_key_value_paragraph {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .personal_key_copy_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: white;
+    transition: 0.5s;
+  }
+  
