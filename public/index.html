@@ -12,7 +12,7 @@
             <div>
                 <div class='description'>
                     <p class='description_paragraph'>
-                        Connect with other user by passing his personal key or talk with random people!
+                        Connect with a user by passing his personal key or talk with starngers!
                     </p>
                 </div>
                 <div class='personal_key'>
@@ -44,20 +44,26 @@
                     </button>
                 </div>
 
-                <div class='randomUSer_connecting_container'>
-                    <p class='randomUSer_title_container'>Random USer</p>
-                    <div class='randomUSer_buttons_container'>
-                        <button class='connecting_button' id='randomUSer_chat_button'>
-                            <img src='/utils/images/chatButton.png' class='connecting_buttons_image'></img>
-                        </button>
-                        <button class='connecting_button' id='randomUSer_video_button'>
-                            <img src='/utils/images/videoButton.png' class='connecting_buttons_image'></img>
-                        </button>
-                    </div>
-                </div>
-
             </div>
 
+            <div class='randomUSer_connecting_container'>
+                <p class='randomUSer_title_container'>Random User</p>
+                <div class='randomUSer_buttons_container'>
+                    <button class='connecting_button' id='randomUSer_chat_button'>
+                        <img src='/utils/images/chatButton.png' class='chatBtnIcon'></img>
+                    </button>
+                    <button class='connecting_button' id='randomUSer_video_button'>
+                        <img src='/utils/images/videoButton.png' class='videoBtnIcon'></img>
+                    </button>
+                </div>
+            </div>
+
+            <div class='checkbox_container'>
+                <div class='checkbox_connection' id='allow_randoms_checkbox'>
+                    <img id='allow_randoms_checkbox_image' class='display_none' src='./utils/images/check.png'></img>
+                </div>
+                <p class='checkbox_container_paragraph'>Allow connection from random users</p>
+            </div>
 
         </div>
         <div class="call"></div>

@@ -67,8 +67,8 @@
 
   .logo {
     margin-left: 40px;
-    width: 180px;
-    height: 120px;
+    width: 150px;
+    height: 60px;
   }
   
   .description {
@@ -158,7 +158,7 @@
   }
   
   .personal_key_connecting_buttons {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -171,4 +171,52 @@
   }
   .videoBtnIcon, .chatBtnIcon{
     width: 50px;
+    max-width: 100%;
+    max-height: 100%;
   }
+
+  .randomUSer_connecting_container {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .randomUSer_title_container {
+    margin-left: 12%;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  
+  .randomUSer_buttons_container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .checkbox_container {
+    display: flex;
+    margin: 0 40px;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+  
+  .checkbox_connection {
+    width: 30px;
+    height: 30px;
+    background: rgba(196, 196, 196, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox_container_paragraph {
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  
+  
