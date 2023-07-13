@@ -300,3 +300,13 @@
     transition: 0.3s;
   }
   
+  .finish_chat_button_container {
+    position: absolute;
+    width: 395px;
+    height: 75px;
+    bottom: 40px;
+    left: calc(50% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
