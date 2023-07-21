@@ -9,6 +9,7 @@
     padding: 0;
     color: white;
     font-family: "Montserrat", sans-serif;
+    overflow: hidden;
   }
   
   .main {
@@ -103,13 +104,13 @@
   
   .personal_key_value {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 25px;
     align-items: center;
   }
   
   .personal_key_value_paragraph {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
   }
   
