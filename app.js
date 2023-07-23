@@ -19,6 +19,11 @@ io.on("connection", (socket)=>{
     ConnectedUsers.push(socket.id);
     console.log(ConnectedUsers);
 
+    socket.on("connection-offer", (data)=>{
+        console.log("connection offer came!");
+        console.log(data);
+
+    })
     socket.on("disconnect", ()=>{
         console.log("user disconnected");
 
