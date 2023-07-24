@@ -20,8 +20,19 @@ io.on("connection", (socket)=>{
     console.log(ConnectedUsers);
 
     socket.on("connection-offer", (data)=>{
-        console.log("connection offer came!");
-        console.log(data);
+        const {callType, calledPersonKey} = data;
+        const calledSocketID = ConnectedUsers.find(userSocketID => {
+            return userSocketID === calledPersonKey;
+        })
+
+        if (calledSocketID) {
+            const data = {
+                callerSocketID : socket.id,
+                callType,
+            };
+
+            io.to(calledPersonKey).emit("connection-offer", data);
+        }
 
     })
     socket.on("disconnect", ()=>{
