@@ -3,7 +3,7 @@ import * as wss from "./websockets.js"
 import * as webRTCHandler from "./webRTCHandler.js";
 import * as constants from "./constants.js";
 import {getIncomingCallDialog} from "./elements.js";
-import { showIncomingCallDialog } from "./ui.js";
+
 
 const socket = io("/");
 
@@ -48,4 +48,4 @@ const personalKeyChatButton = document.getElementById(
   });
 
 
-  showIncomingCallDialog("VIDEO", ()=>{}, ()=>{});
+ 

@@ -42,6 +42,5 @@ export const getIncomingCallDialog = (callTypeInfo, acceptCallHandler, rejectCal
     dialogContent.appendChild(imageContainer);
     dialogContent.appendChild(buttonContainer);
 
-    const dialogHTML = document.getElementById("dialog");
-    dialogHTML.appendChild(dialog);
+    return dialog;
 }

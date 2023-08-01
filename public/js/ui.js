@@ -8,18 +8,13 @@ export const updatePersonalKey = (personalKey) => {
     personalKeyParagraph.innerHTML = personalKey;
   };
 
-  export const showIncomingCallDialog = (
-    callType,
-    acceptCallHandler,
-    rejectCallHandler
-  ) => {
-    const callTypeInfo =
-      callType === constants.callType.CHAT_PERSONAL_KEY ? "Chat" : "Video";
+export const showIncomingCallDialog = (callType, acceptCallHandler, rejectCallHandler) => {
+  const callTypeInfo =
+    callType === constants.callType.CHAT_PERSONAL_KEY ? "Chat" : "Video";
   
-    const incomingCallDialog = elements.getIncomingCallDialog(
-      callTypeInfo,
-      acceptCallHandler,
-      rejectCallHandler
-    );
-  
-  }
+  const incomingCallDialog = elements.getIncomingCallDialog(callTypeInfo, acceptCallHandler, rejectCallHandler);
+  const dialog = document.getElementById("dialog");
+  dialog.querySelectorAll("*").forEach((dialog) => dialog.remove());
+
+  dialog.appendChild(incomingCallDialog);
+}
